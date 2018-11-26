@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.12.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3
+CMAKE_SOURCE_DIR = /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build
+CMAKE_BINARY_DIR = /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/a3.dir/depend.make
@@ -59,133 +59,94 @@ include CMakeFiles/a3.dir/flags.make
 
 CMakeFiles/a3.dir/src/main.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/a3.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/main.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/a3.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/main.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/main.cpp
 
 CMakeFiles/a3.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/main.cpp > CMakeFiles/a3.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/main.cpp > CMakeFiles/a3.dir/src/main.cpp.i
 
 CMakeFiles/a3.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/main.cpp -o CMakeFiles/a3.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/main.cpp -o CMakeFiles/a3.dir/src/main.cpp.s
 
 CMakeFiles/a3.dir/src/starter3_util.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/src/starter3_util.cpp.o: ../src/starter3_util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/a3.dir/src/starter3_util.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/starter3_util.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/starter3_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/a3.dir/src/starter3_util.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/starter3_util.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/starter3_util.cpp
 
 CMakeFiles/a3.dir/src/starter3_util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/starter3_util.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/starter3_util.cpp > CMakeFiles/a3.dir/src/starter3_util.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/starter3_util.cpp > CMakeFiles/a3.dir/src/starter3_util.cpp.i
 
 CMakeFiles/a3.dir/src/starter3_util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/starter3_util.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/starter3_util.cpp -o CMakeFiles/a3.dir/src/starter3_util.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/starter3_util.cpp -o CMakeFiles/a3.dir/src/starter3_util.cpp.s
 
 CMakeFiles/a3.dir/src/camera.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/src/camera.cpp.o: ../src/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/a3.dir/src/camera.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/camera.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/a3.dir/src/camera.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/camera.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/camera.cpp
 
 CMakeFiles/a3.dir/src/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/camera.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/camera.cpp > CMakeFiles/a3.dir/src/camera.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/camera.cpp > CMakeFiles/a3.dir/src/camera.cpp.i
 
 CMakeFiles/a3.dir/src/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/camera.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/camera.cpp -o CMakeFiles/a3.dir/src/camera.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/camera.cpp -o CMakeFiles/a3.dir/src/camera.cpp.s
 
 CMakeFiles/a3.dir/src/vertexrecorder.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/src/vertexrecorder.cpp.o: ../src/vertexrecorder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/a3.dir/src/vertexrecorder.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/vertexrecorder.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/vertexrecorder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/a3.dir/src/vertexrecorder.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/vertexrecorder.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/vertexrecorder.cpp
 
 CMakeFiles/a3.dir/src/vertexrecorder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/vertexrecorder.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/vertexrecorder.cpp > CMakeFiles/a3.dir/src/vertexrecorder.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/vertexrecorder.cpp > CMakeFiles/a3.dir/src/vertexrecorder.cpp.i
 
 CMakeFiles/a3.dir/src/vertexrecorder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/vertexrecorder.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/vertexrecorder.cpp -o CMakeFiles/a3.dir/src/vertexrecorder.cpp.s
-
-CMakeFiles/a3.dir/src/clothsystem.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/src/clothsystem.cpp.o: ../src/clothsystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/a3.dir/src/clothsystem.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/clothsystem.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/clothsystem.cpp
-
-CMakeFiles/a3.dir/src/clothsystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/clothsystem.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/clothsystem.cpp > CMakeFiles/a3.dir/src/clothsystem.cpp.i
-
-CMakeFiles/a3.dir/src/clothsystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/clothsystem.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/clothsystem.cpp -o CMakeFiles/a3.dir/src/clothsystem.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/vertexrecorder.cpp -o CMakeFiles/a3.dir/src/vertexrecorder.cpp.s
 
 CMakeFiles/a3.dir/src/timestepper.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/src/timestepper.cpp.o: ../src/timestepper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/a3.dir/src/timestepper.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/timestepper.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/timestepper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/a3.dir/src/timestepper.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/timestepper.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/timestepper.cpp
 
 CMakeFiles/a3.dir/src/timestepper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/timestepper.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/timestepper.cpp > CMakeFiles/a3.dir/src/timestepper.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/timestepper.cpp > CMakeFiles/a3.dir/src/timestepper.cpp.i
 
 CMakeFiles/a3.dir/src/timestepper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/timestepper.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/timestepper.cpp -o CMakeFiles/a3.dir/src/timestepper.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/timestepper.cpp -o CMakeFiles/a3.dir/src/timestepper.cpp.s
 
 CMakeFiles/a3.dir/src/particlesystem.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/src/particlesystem.cpp.o: ../src/particlesystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/a3.dir/src/particlesystem.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/particlesystem.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/particlesystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/a3.dir/src/particlesystem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/particlesystem.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/particlesystem.cpp
 
 CMakeFiles/a3.dir/src/particlesystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/particlesystem.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/particlesystem.cpp > CMakeFiles/a3.dir/src/particlesystem.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/particlesystem.cpp > CMakeFiles/a3.dir/src/particlesystem.cpp.i
 
 CMakeFiles/a3.dir/src/particlesystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/particlesystem.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/particlesystem.cpp -o CMakeFiles/a3.dir/src/particlesystem.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/particlesystem.cpp -o CMakeFiles/a3.dir/src/particlesystem.cpp.s
 
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.o: ../src/pendulumsystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/a3.dir/src/pendulumsystem.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/pendulumsystem.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/pendulumsystem.cpp
+CMakeFiles/a3.dir/src/ballsystem.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/src/ballsystem.cpp.o: ../src/ballsystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/a3.dir/src/ballsystem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/ballsystem.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/ballsystem.cpp
 
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/pendulumsystem.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/pendulumsystem.cpp > CMakeFiles/a3.dir/src/pendulumsystem.cpp.i
+CMakeFiles/a3.dir/src/ballsystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/ballsystem.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/ballsystem.cpp > CMakeFiles/a3.dir/src/ballsystem.cpp.i
 
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/pendulumsystem.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/pendulumsystem.cpp -o CMakeFiles/a3.dir/src/pendulumsystem.cpp.s
-
-CMakeFiles/a3.dir/src/simplesystem.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/src/simplesystem.cpp.o: ../src/simplesystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/a3.dir/src/simplesystem.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/simplesystem.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/simplesystem.cpp
-
-CMakeFiles/a3.dir/src/simplesystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/simplesystem.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/simplesystem.cpp > CMakeFiles/a3.dir/src/simplesystem.cpp.i
-
-CMakeFiles/a3.dir/src/simplesystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/simplesystem.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/simplesystem.cpp -o CMakeFiles/a3.dir/src/simplesystem.cpp.s
-
-CMakeFiles/a3.dir/src/spring.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/src/spring.cpp.o: ../src/spring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/a3.dir/src/spring.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/spring.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/spring.cpp
-
-CMakeFiles/a3.dir/src/spring.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/spring.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/spring.cpp > CMakeFiles/a3.dir/src/spring.cpp.i
-
-CMakeFiles/a3.dir/src/spring.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/spring.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/src/spring.cpp -o CMakeFiles/a3.dir/src/spring.cpp.s
+CMakeFiles/a3.dir/src/ballsystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/ballsystem.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/ballsystem.cpp -o CMakeFiles/a3.dir/src/ballsystem.cpp.s
 
 # Object files for target a3
 a3_OBJECTS = \
@@ -193,12 +154,9 @@ a3_OBJECTS = \
 "CMakeFiles/a3.dir/src/starter3_util.cpp.o" \
 "CMakeFiles/a3.dir/src/camera.cpp.o" \
 "CMakeFiles/a3.dir/src/vertexrecorder.cpp.o" \
-"CMakeFiles/a3.dir/src/clothsystem.cpp.o" \
 "CMakeFiles/a3.dir/src/timestepper.cpp.o" \
 "CMakeFiles/a3.dir/src/particlesystem.cpp.o" \
-"CMakeFiles/a3.dir/src/pendulumsystem.cpp.o" \
-"CMakeFiles/a3.dir/src/simplesystem.cpp.o" \
-"CMakeFiles/a3.dir/src/spring.cpp.o"
+"CMakeFiles/a3.dir/src/ballsystem.cpp.o"
 
 # External object files for target a3
 a3_EXTERNAL_OBJECTS =
@@ -207,17 +165,14 @@ a3: CMakeFiles/a3.dir/src/main.cpp.o
 a3: CMakeFiles/a3.dir/src/starter3_util.cpp.o
 a3: CMakeFiles/a3.dir/src/camera.cpp.o
 a3: CMakeFiles/a3.dir/src/vertexrecorder.cpp.o
-a3: CMakeFiles/a3.dir/src/clothsystem.cpp.o
 a3: CMakeFiles/a3.dir/src/timestepper.cpp.o
 a3: CMakeFiles/a3.dir/src/particlesystem.cpp.o
-a3: CMakeFiles/a3.dir/src/pendulumsystem.cpp.o
-a3: CMakeFiles/a3.dir/src/simplesystem.cpp.o
-a3: CMakeFiles/a3.dir/src/spring.cpp.o
+a3: CMakeFiles/a3.dir/src/ballsystem.cpp.o
 a3: CMakeFiles/a3.dir/build.make
 a3: 3rd_party/glfw/src/libglfw3.a
 a3: vecmath/libvecmath.a
 a3: CMakeFiles/a3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable a3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable a3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/a3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -230,6 +185,6 @@ CMakeFiles/a3.dir/clean:
 .PHONY : CMakeFiles/a3.dir/clean
 
 CMakeFiles/a3.dir/depend:
-	cd /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3 /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3 /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles/a3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837 /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837 /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles/a3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/a3.dir/depend
 

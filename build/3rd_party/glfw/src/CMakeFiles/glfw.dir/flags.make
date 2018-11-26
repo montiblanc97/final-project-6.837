@@ -6,5 +6,5 @@ C_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/3rd_party/glfw/include -I/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/3rd_party/glfw/src -I/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/3rd_party/glfw/src 
+C_INCLUDES = -I/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/3rd_party/glfw/include -I/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/3rd_party/glfw/src -I/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/3rd_party/glfw/src 
 

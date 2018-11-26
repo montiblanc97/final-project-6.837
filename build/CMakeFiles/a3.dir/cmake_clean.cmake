@@ -3,12 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/a3.dir/src/starter3_util.cpp.o"
   "CMakeFiles/a3.dir/src/camera.cpp.o"
   "CMakeFiles/a3.dir/src/vertexrecorder.cpp.o"
-  "CMakeFiles/a3.dir/src/clothsystem.cpp.o"
   "CMakeFiles/a3.dir/src/timestepper.cpp.o"
   "CMakeFiles/a3.dir/src/particlesystem.cpp.o"
-  "CMakeFiles/a3.dir/src/pendulumsystem.cpp.o"
-  "CMakeFiles/a3.dir/src/simplesystem.cpp.o"
-  "CMakeFiles/a3.dir/src/spring.cpp.o"
+  "CMakeFiles/a3.dir/src/ballsystem.cpp.o"
   "a3.pdb"
   "a3"
 )

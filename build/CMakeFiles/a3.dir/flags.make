@@ -6,5 +6,5 @@ CXX_FLAGS =  --std=gnu++11 -g -Wall -Wno-unused-variable -isysroot /Applications
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/vecmath/include -I/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/3rd_party/glfw/include 
+CXX_INCLUDES = -I/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/vecmath/include -I/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/3rd_party/glfw/include 
 

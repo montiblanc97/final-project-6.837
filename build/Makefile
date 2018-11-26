@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.12.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3
+CMAKE_SOURCE_DIR = /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build
+CMAKE_BINARY_DIR = /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/starter3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,33 @@ vecmath/fast:
 	$(MAKE) -f vecmath/CMakeFiles/vecmath.dir/build.make vecmath/CMakeFiles/vecmath.dir/build
 .PHONY : vecmath/fast
 
+src/ballsystem.o: src/ballsystem.cpp.o
+
+.PHONY : src/ballsystem.o
+
+# target to build an object file
+src/ballsystem.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/ballsystem.cpp.o
+.PHONY : src/ballsystem.cpp.o
+
+src/ballsystem.i: src/ballsystem.cpp.i
+
+.PHONY : src/ballsystem.i
+
+# target to preprocess a source file
+src/ballsystem.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/ballsystem.cpp.i
+.PHONY : src/ballsystem.cpp.i
+
+src/ballsystem.s: src/ballsystem.cpp.s
+
+.PHONY : src/ballsystem.s
+
+# target to generate assembly for a file
+src/ballsystem.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/ballsystem.cpp.s
+.PHONY : src/ballsystem.cpp.s
+
 src/camera.o: src/camera.cpp.o
 
 .PHONY : src/camera.o
@@ -175,33 +202,6 @@ src/camera.s: src/camera.cpp.s
 src/camera.cpp.s:
 	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
-
-src/clothsystem.o: src/clothsystem.cpp.o
-
-.PHONY : src/clothsystem.o
-
-# target to build an object file
-src/clothsystem.cpp.o:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/clothsystem.cpp.o
-.PHONY : src/clothsystem.cpp.o
-
-src/clothsystem.i: src/clothsystem.cpp.i
-
-.PHONY : src/clothsystem.i
-
-# target to preprocess a source file
-src/clothsystem.cpp.i:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/clothsystem.cpp.i
-.PHONY : src/clothsystem.cpp.i
-
-src/clothsystem.s: src/clothsystem.cpp.s
-
-.PHONY : src/clothsystem.s
-
-# target to generate assembly for a file
-src/clothsystem.cpp.s:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/clothsystem.cpp.s
-.PHONY : src/clothsystem.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -256,87 +256,6 @@ src/particlesystem.s: src/particlesystem.cpp.s
 src/particlesystem.cpp.s:
 	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/particlesystem.cpp.s
 .PHONY : src/particlesystem.cpp.s
-
-src/pendulumsystem.o: src/pendulumsystem.cpp.o
-
-.PHONY : src/pendulumsystem.o
-
-# target to build an object file
-src/pendulumsystem.cpp.o:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/pendulumsystem.cpp.o
-.PHONY : src/pendulumsystem.cpp.o
-
-src/pendulumsystem.i: src/pendulumsystem.cpp.i
-
-.PHONY : src/pendulumsystem.i
-
-# target to preprocess a source file
-src/pendulumsystem.cpp.i:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/pendulumsystem.cpp.i
-.PHONY : src/pendulumsystem.cpp.i
-
-src/pendulumsystem.s: src/pendulumsystem.cpp.s
-
-.PHONY : src/pendulumsystem.s
-
-# target to generate assembly for a file
-src/pendulumsystem.cpp.s:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/pendulumsystem.cpp.s
-.PHONY : src/pendulumsystem.cpp.s
-
-src/simplesystem.o: src/simplesystem.cpp.o
-
-.PHONY : src/simplesystem.o
-
-# target to build an object file
-src/simplesystem.cpp.o:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/simplesystem.cpp.o
-.PHONY : src/simplesystem.cpp.o
-
-src/simplesystem.i: src/simplesystem.cpp.i
-
-.PHONY : src/simplesystem.i
-
-# target to preprocess a source file
-src/simplesystem.cpp.i:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/simplesystem.cpp.i
-.PHONY : src/simplesystem.cpp.i
-
-src/simplesystem.s: src/simplesystem.cpp.s
-
-.PHONY : src/simplesystem.s
-
-# target to generate assembly for a file
-src/simplesystem.cpp.s:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/simplesystem.cpp.s
-.PHONY : src/simplesystem.cpp.s
-
-src/spring.o: src/spring.cpp.o
-
-.PHONY : src/spring.o
-
-# target to build an object file
-src/spring.cpp.o:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/spring.cpp.o
-.PHONY : src/spring.cpp.o
-
-src/spring.i: src/spring.cpp.i
-
-.PHONY : src/spring.i
-
-# target to preprocess a source file
-src/spring.cpp.i:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/spring.cpp.i
-.PHONY : src/spring.cpp.i
-
-src/spring.s: src/spring.cpp.s
-
-.PHONY : src/spring.s
-
-# target to generate assembly for a file
-src/spring.cpp.s:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/spring.cpp.s
-.PHONY : src/spring.cpp.s
 
 src/starter3_util.o: src/starter3_util.cpp.o
 
@@ -430,27 +349,18 @@ help:
 	@echo "... a3"
 	@echo "... glfw"
 	@echo "... vecmath"
+	@echo "... src/ballsystem.o"
+	@echo "... src/ballsystem.i"
+	@echo "... src/ballsystem.s"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
-	@echo "... src/clothsystem.o"
-	@echo "... src/clothsystem.i"
-	@echo "... src/clothsystem.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/particlesystem.o"
 	@echo "... src/particlesystem.i"
 	@echo "... src/particlesystem.s"
-	@echo "... src/pendulumsystem.o"
-	@echo "... src/pendulumsystem.i"
-	@echo "... src/pendulumsystem.s"
-	@echo "... src/simplesystem.o"
-	@echo "... src/simplesystem.i"
-	@echo "... src/simplesystem.s"
-	@echo "... src/spring.o"
-	@echo "... src/spring.i"
-	@echo "... src/spring.s"
 	@echo "... src/starter3_util.o"
 	@echo "... src/starter3_util.i"
 	@echo "... src/starter3_util.s"

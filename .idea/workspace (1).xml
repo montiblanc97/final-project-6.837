@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="277ff51d-2714-4ea0-894d-a5a4c5417d41" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/C.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/cmake_clean_target.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/context.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/init.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/input.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/monitor.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/glfw.dir/window.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/glfw3.pc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/glfw3Config.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/glfw3ConfigVersion.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/glfw_config.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/3rd_party/glfw/src/libglfw3.a" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.12.2/CMakeCCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.12.2/CMakeCXXCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.12.2/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.12.2/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.12.2/CMakeSystem.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.12.2/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.12.2/CompilerIdC/a.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.12.2/CompilerIdCXX/a.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/CXX.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/src/camera.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/src/clothsystem.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/src/main.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/src/particlesystem.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/src/pendulumsystem.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/src/simplesystem.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/src/spring.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/src/starter3_util.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/src/timestepper.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/a3.dir/src/vertexrecorder.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.cxx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/a3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/CXX.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/Matrix2f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/Matrix3f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/Matrix4f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/Quat4f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/Vector2f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/Vector3f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/Vector4f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/cmake_clean_target.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/CMakeFiles/vecmath.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/vecmath/libvecmath.a" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/GLFW.cbp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/C.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/cmake_clean_target.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/context.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/init.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/input.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/monitor.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/glfw.dir/window.c.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/glfw3.pc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/glfw3Config.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/glfw3ConfigVersion.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/glfw_config.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3rd_party/glfw/src/libglfw3.a" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeCCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeCXXCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeRCCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeSystem.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/a.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/a.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeCache.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_76940.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_76940.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_76940.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_76940.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_76940.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_76940.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmake.check_cache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeLists.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/a3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/a3.cbp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/CXX.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/Matrix2f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/Matrix3f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/Matrix4f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/Quat4f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/Vector2f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/Vector3f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/Vector4f.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/cmake_clean_target.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/CMakeFiles/vecmath.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vecmath/libvecmath.a" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/clothsystem.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/clothsystem.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/pendulumsystem.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/pendulumsystem.h" afterPath="$PROJECT_DIR$/src/ballsystem.h" />
+      <change beforePath="$PROJECT_DIR$/src/simplesystem.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/simplesystem.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/spring.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/spring.h" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1250850538">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="23" />
+          <entry key="h" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ObjectiveC" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="7339" />
+          <entry key="h" value="493" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="ObjectiveC" value="7832" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ballsystem.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ballsystem.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="289" column="16" lean-forward="false" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1836">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timestepper.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/timestepper.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1512">
+              <caret line="56" column="22" lean-forward="false" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="particlesystem.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/particlesystem.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>stepSys</find>
+      <find>draw</find>
+      <find>stepSystem</find>
+      <find>RK4</find>
+      <find>drawCyl</find>
+      <find>cout</find>
+      <find>structural</find>
+      <find>print</find>
+      <find>key</find>
+      <find>cloth</find>
+      <find>spring</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>shear</replace>
+      <replace>flexion</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/simplesystem.cpp" />
+        <option value="$PROJECT_DIR$/src/pendulumsystem.h" />
+        <option value="$PROJECT_DIR$/src/particlesystem.cpp" />
+        <option value="$PROJECT_DIR$/src/timestepper.h" />
+        <option value="$PROJECT_DIR$/src/pendulumsystem.cpp" />
+        <option value="$PROJECT_DIR$/src/clothsystem.h" />
+        <option value="$PROJECT_DIR$/src/spring.h" />
+        <option value="$PROJECT_DIR$/src/clothsystem.cpp" />
+        <option value="$PROJECT_DIR$/src/timestepper.cpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/ballsystem.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="791" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>C/C++</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="a3" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="final-project-6.837" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="a3" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="final-project-6.837" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="277ff51d-2714-4ea0-894d-a5a4c5417d41" name="Default Changelist" comment="" />
+      <created>1539534551978</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539534551978</updated>
+      <workItem from="1539534553385" duration="19349000" />
+      <workItem from="1539714199050" duration="153000" />
+      <workItem from="1539724380399" duration="350000" />
+      <workItem from="1540509199341" duration="5000" />
+      <workItem from="1540728436348" duration="99000" />
+      <workItem from="1542292268050" duration="1106000" />
+      <workItem from="1543195453928" duration="1210000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22272000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15279241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/clothsystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clothsystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ballsystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" column="1" lean-forward="false" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ballsystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/particlesystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simplesystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simplesystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/timestepper.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clothsystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clothsystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ballsystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" column="1" lean-forward="false" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ballsystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/timestepper.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="27" lean-forward="false" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simplesystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simplesystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vertexrecorder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="171" column="12" lean-forward="false" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vecmath/Vector3f.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/timestepper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="31" column="144" lean-forward="false" selection-start-line="31" selection-start-column="144" selection-end-line="31" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/stdio.h" />
+    <entry file="file://$PROJECT_DIR$/src/simplesystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/particlesystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simplesystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clothsystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clothsystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ballsystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/timestepper.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="56" column="22" lean-forward="false" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="289" column="16" lean-forward="false" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/particlesystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ballsystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
