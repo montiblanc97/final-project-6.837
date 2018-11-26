@@ -1,0 +1,1 @@
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_76940.dir/testCXXCompiler.cxx.o  -o cmTC_76940.exe -Wl,--out-implib,libcmTC_76940.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
