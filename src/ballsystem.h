@@ -4,6 +4,8 @@
 #include <vector>
 
 #include "particlesystem.h"
+#include "wall.h"
+#include "sphere.h"
 
 class Spring {
 public:
@@ -16,17 +18,19 @@ public:
     float stiffness;
 };
 
-class PendulumSystem : public ParticleSystem
+class BallSystem : public ParticleSystem
 {
 public:
-    PendulumSystem();
+    BallSystem();
 
     std::vector<Vector3f> evalF(std::vector<Vector3f> state) override;
     void draw(GLProgram&);
 
     // inherits 
     // std::vector<Vector3f> m_vVecState;
-    std::vector<Spring> springs;
+
+    std::vector<Wall> _walls;
+    std::vector<Sphere> _spheres;  // note indexed for each particle
 };
 
 #endif

@@ -46,25 +46,21 @@ Vector3f.h
 Vector4f.h
 ../vecmath/include/Vector4f.h
 
-/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/particlesystem.h
-vector
--
+/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/hit.h
 vecmath.h
 -
-cstdint
--
 
-/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/timestepper.cpp
-timestepper.h
-/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/timestepper.h
-cstdio
--
+/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/sphere.cpp
+sphere.h
+/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/sphere.h
 
-/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/timestepper.h
+/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/sphere.h
+wall.h
+/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/wall.h
+hit.h
+/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/hit.h
+
+/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/wall.h
 vecmath.h
-/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/vecmath.h
-vector
 -
-particlesystem.h
-/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/particlesystem.h
 

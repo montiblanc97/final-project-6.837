@@ -9,40 +9,44 @@ const int NUM_PARTICLES = 4;
 const float mass = 1;
 const float drag_constant = 0.5;
 
+const float sphere_radius = 0.075f;
 
-PendulumSystem::PendulumSystem()
+
+BallSystem::BallSystem()
 {
+    // make walls
+    _walls.emplace_back(Vector3f(-1, -1, -1), Vector3f(-1, -1, 1), Vector3f(1, -1, 1));  // floor
+    _walls.emplace_back(Vector3f(-1, -1, -1), Vector3f(-1, 1, -1), Vector3f(1, 1, -1));  // front
+    _walls.emplace_back(Vector3f(-1, -1, 1), Vector3f(-1, 1, 1), Vector3f(1, 1, 1));  // back
+    _walls.emplace_back(Vector3f(-1, -1, -1), Vector3f(-1, 1, -1), Vector3f(1, 1, 1));  // left
+    _walls.emplace_back(Vector3f(1, -1, -1), Vector3f(1, 1, -1), Vector3f(1, 1, 1));  // right
 
-    // TODO 4.2 Add particles for simple pendulum
-    // TODO 4.3 Extend to multiple particles
-
-    // To add a bit of randomness, use e.g.
-    // float f = rand_uniform(-0.5f, 0.5f);
-    // in your initial conditions.
 
     // big vector of 2n with position at even indices, velocity at odd
 
-    // fixed point
-    m_vVecState.emplace_back(0, 0, 0);  // position
-    m_vVecState.emplace_back(0, 0, 0);  // velocity
-
     for (int i=0; i<NUM_PARTICLES; i++) {
-        m_vVecState.emplace_back(rand_uniform(-0.5f, 0.5f), rand_uniform(1.0f, 1.5f), rand_uniform(-0.5f, 0.5f));  // position
+        Vector3f position = Vector3f(rand_uniform(-0.5f, 0.5f), rand_uniform(-0.5f, 0.5f), rand_uniform(-0.5f, 0.5f));
+        m_vVecState.push_back(position);  // position
         m_vVecState.emplace_back(rand_uniform(-0.5f, 0.5f), rand_uniform(-0.5f, 0.5f), rand_uniform(-0.5f, 0.5f));  // velocity
+
+        // add sphere rep for each
+        _spheres.emplace_back(position, sphere_radius);
     }
 }
 
 
-std::vector<Vector3f> PendulumSystem::evalF(std::vector<Vector3f> state)
+std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
 {
+    // need to first update sphere positions to the particles (not handled during time step)
+    for (int i=0; i<_spheres.size(); i+=1) {
+        Vector3f current_position = state[i*2];  // get position in combined vector
+        _spheres[i].updateCenter(current_position);
+    }
+
+
     std::vector<Vector3f> f;
-    // TODO 4.1: implement evalF
 
-    // ignore first one (fixed point)
-    f.emplace_back(0, 0, 0);
-    f.emplace_back(0, 0, 0);
-
-    for (int i=2; i<state.size(); i+=2) {  //position and velocity stored in same
+    for (int i=0; i<state.size(); i+=2) {  //position and velocity stored in same
         Vector3f vel = state[i + 1];
 
         f.push_back(vel);  // derivative of position is velocity
@@ -54,6 +58,8 @@ std::vector<Vector3f> PendulumSystem::evalF(std::vector<Vector3f> state)
         //  - viscous drag
         net_force = net_force - drag_constant * vel;
 
+        //TODO: collision detection/resolution
+
         f.push_back(net_force/mass);
     }
 
@@ -61,7 +67,7 @@ std::vector<Vector3f> PendulumSystem::evalF(std::vector<Vector3f> state)
 }
 
 // render the system (ie draw the particles)
-void PendulumSystem::draw(GLProgram& gl)
+void BallSystem::draw(GLProgram& gl)
 {
     std::vector<Vector3f> current = getState();
 
@@ -75,23 +81,13 @@ void PendulumSystem::draw(GLProgram& gl)
         Vector3f pos = current[i];
 
         gl.updateModelMatrix(Matrix4f::translation(pos));
-        drawSphere(0.075f, 10, 10);
+        drawSphere(sphere_radius, 10, 10);
     }
 
     gl.disableLighting();
     gl.updateModelMatrix(Matrix4f::identity()); // update uniforms after mode change
     VertexRecorder rec;
 
-    for (int i=0; i<this->springs.size(); i++) {
-        Spring spr = this->springs[i];
-        Vector3f pos1 = current[spr.end1];
-        Vector3f pos2 = current[spr.end2];
-
-        Vector3f diff = pos2 - pos1;
-
-        rec.record(pos1, PENDULUM_COLOR);
-        rec.record(pos1 + diff, PENDULUM_COLOR);
-    }
     glLineWidth(3.0f);
     rec.draw(GL_LINES);
 }

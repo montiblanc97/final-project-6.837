@@ -15,9 +15,6 @@ void ForwardEuler::takeStep(ParticleSystem *particleSystem, float stepSize) {
         float x_h = stepSize * deriv[0];
         float y = particle[1];
         float y_h = stepSize * deriv[1];
-//        if (y<=0) {
-//            y_h = -y_h;
-//        }
         float z = particle[2];
         updated.emplace_back(x + x_h, y + y_h, z);
     }

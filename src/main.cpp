@@ -51,7 +51,7 @@ bool gMousePressed = false;
 GLuint program_color;
 GLuint program_light;
 
-PendulumSystem* pendulumSystem;
+BallSystem* pendulumSystem;
 
 // Function implementations
 static void keyCallback(GLFWwindow* window, int key,
@@ -181,7 +181,7 @@ void initSystem()
     default: printf("Unrecognized integrator\n"); exit(-1);
     }
 
-    pendulumSystem = new PendulumSystem();
+    pendulumSystem = new BallSystem();
 }
 
 void freeSystem() {

@@ -203,6 +203,33 @@ src/camera.cpp.s:
 	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
 
+src/hit.o: src/hit.cpp.o
+
+.PHONY : src/hit.o
+
+# target to build an object file
+src/hit.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/hit.cpp.o
+.PHONY : src/hit.cpp.o
+
+src/hit.i: src/hit.cpp.i
+
+.PHONY : src/hit.i
+
+# target to preprocess a source file
+src/hit.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/hit.cpp.i
+.PHONY : src/hit.cpp.i
+
+src/hit.s: src/hit.cpp.s
+
+.PHONY : src/hit.s
+
+# target to generate assembly for a file
+src/hit.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/hit.cpp.s
+.PHONY : src/hit.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -256,6 +283,33 @@ src/particlesystem.s: src/particlesystem.cpp.s
 src/particlesystem.cpp.s:
 	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/particlesystem.cpp.s
 .PHONY : src/particlesystem.cpp.s
+
+src/sphere.o: src/sphere.cpp.o
+
+.PHONY : src/sphere.o
+
+# target to build an object file
+src/sphere.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/sphere.cpp.o
+.PHONY : src/sphere.cpp.o
+
+src/sphere.i: src/sphere.cpp.i
+
+.PHONY : src/sphere.i
+
+# target to preprocess a source file
+src/sphere.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/sphere.cpp.i
+.PHONY : src/sphere.cpp.i
+
+src/sphere.s: src/sphere.cpp.s
+
+.PHONY : src/sphere.s
+
+# target to generate assembly for a file
+src/sphere.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/sphere.cpp.s
+.PHONY : src/sphere.cpp.s
 
 src/starter3_util.o: src/starter3_util.cpp.o
 
@@ -338,6 +392,33 @@ src/vertexrecorder.cpp.s:
 	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/vertexrecorder.cpp.s
 .PHONY : src/vertexrecorder.cpp.s
 
+src/wall.o: src/wall.cpp.o
+
+.PHONY : src/wall.o
+
+# target to build an object file
+src/wall.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/wall.cpp.o
+.PHONY : src/wall.cpp.o
+
+src/wall.i: src/wall.cpp.i
+
+.PHONY : src/wall.i
+
+# target to preprocess a source file
+src/wall.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/wall.cpp.i
+.PHONY : src/wall.cpp.i
+
+src/wall.s: src/wall.cpp.s
+
+.PHONY : src/wall.s
+
+# target to generate assembly for a file
+src/wall.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/wall.cpp.s
+.PHONY : src/wall.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -355,12 +436,18 @@ help:
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
+	@echo "... src/hit.o"
+	@echo "... src/hit.i"
+	@echo "... src/hit.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/particlesystem.o"
 	@echo "... src/particlesystem.i"
 	@echo "... src/particlesystem.s"
+	@echo "... src/sphere.o"
+	@echo "... src/sphere.i"
+	@echo "... src/sphere.s"
 	@echo "... src/starter3_util.o"
 	@echo "... src/starter3_util.i"
 	@echo "... src/starter3_util.s"
@@ -370,6 +457,9 @@ help:
 	@echo "... src/vertexrecorder.o"
 	@echo "... src/vertexrecorder.i"
 	@echo "... src/vertexrecorder.s"
+	@echo "... src/wall.o"
+	@echo "... src/wall.i"
+	@echo "... src/wall.s"
 .PHONY : help
 
 

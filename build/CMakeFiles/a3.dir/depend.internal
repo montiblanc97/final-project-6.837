@@ -14,8 +14,11 @@ CMakeFiles/a3.dir/src/ballsystem.cpp.o
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/ballsystem.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/camera.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/gl.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/hit.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/particlesystem.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/sphere.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/vertexrecorder.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/wall.h
 CMakeFiles/a3.dir/src/camera.cpp.o
  ../vecmath/include/Matrix2f.h
  ../vecmath/include/Matrix3f.h
@@ -28,6 +31,17 @@ CMakeFiles/a3.dir/src/camera.cpp.o
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/camera.cpp
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/camera.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/gl.h
+CMakeFiles/a3.dir/src/hit.cpp.o
+ ../vecmath/include/Matrix2f.h
+ ../vecmath/include/Matrix3f.h
+ ../vecmath/include/Matrix4f.h
+ ../vecmath/include/Quat4f.h
+ ../vecmath/include/Vector2f.h
+ ../vecmath/include/Vector3f.h
+ ../vecmath/include/Vector4f.h
+ ../vecmath/include/vecmath.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/hit.cpp
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/hit.h
 CMakeFiles/a3.dir/src/main.cpp.o
  ../3rd_party/glfw/include/GLFW/glfw3.h
  ../vecmath/include/Matrix2f.h
@@ -41,11 +55,14 @@ CMakeFiles/a3.dir/src/main.cpp.o
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/ballsystem.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/camera.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/gl.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/hit.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/main.cpp
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/particlesystem.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/sphere.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/starter3_util.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/timestepper.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/vertexrecorder.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/wall.h
 CMakeFiles/a3.dir/src/particlesystem.cpp.o
  ../vecmath/include/Matrix2f.h
  ../vecmath/include/Matrix3f.h
@@ -59,6 +76,19 @@ CMakeFiles/a3.dir/src/particlesystem.cpp.o
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/gl.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/particlesystem.cpp
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/particlesystem.h
+CMakeFiles/a3.dir/src/sphere.cpp.o
+ ../vecmath/include/Matrix2f.h
+ ../vecmath/include/Matrix3f.h
+ ../vecmath/include/Matrix4f.h
+ ../vecmath/include/Quat4f.h
+ ../vecmath/include/Vector2f.h
+ ../vecmath/include/Vector3f.h
+ ../vecmath/include/Vector4f.h
+ ../vecmath/include/vecmath.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/hit.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/sphere.cpp
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/sphere.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/wall.h
 CMakeFiles/a3.dir/src/starter3_util.cpp.o
  ../3rd_party/glfw/include/GLFW/glfw3.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/gl.h
@@ -88,3 +118,14 @@ CMakeFiles/a3.dir/src/vertexrecorder.cpp.o
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/gl.h
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/vertexrecorder.cpp
  /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/vertexrecorder.h
+CMakeFiles/a3.dir/src/wall.cpp.o
+ ../vecmath/include/Matrix2f.h
+ ../vecmath/include/Matrix3f.h
+ ../vecmath/include/Matrix4f.h
+ ../vecmath/include/Quat4f.h
+ ../vecmath/include/Vector2f.h
+ ../vecmath/include/Vector3f.h
+ ../vecmath/include/Vector4f.h
+ ../vecmath/include/vecmath.h
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/wall.cpp
+ /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/wall.h

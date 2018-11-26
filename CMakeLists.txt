@@ -65,6 +65,6 @@ list (APPEND A3_HEADER
   src/ballsystem.h
 )
 
-add_executable(a3 ${A3_SRC} ${A3_HEADER})
+add_executable(a3 ${A3_SRC} ${A3_HEADER} src/hit.cpp src/hit.h src/wall.cpp src/wall.h src/sphere.cpp src/sphere.h)
 target_include_directories(a3 PUBLIC ${A3_INCLUDES})
 target_link_libraries(a3 ${A3_LIBS})

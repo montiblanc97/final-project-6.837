@@ -13,8 +13,11 @@ CMakeFiles/a3.dir/src/ballsystem.cpp.o: ../src/ballsystem.cpp
 CMakeFiles/a3.dir/src/ballsystem.cpp.o: ../src/ballsystem.h
 CMakeFiles/a3.dir/src/ballsystem.cpp.o: ../src/camera.h
 CMakeFiles/a3.dir/src/ballsystem.cpp.o: ../src/gl.h
+CMakeFiles/a3.dir/src/ballsystem.cpp.o: ../src/hit.h
 CMakeFiles/a3.dir/src/ballsystem.cpp.o: ../src/particlesystem.h
+CMakeFiles/a3.dir/src/ballsystem.cpp.o: ../src/sphere.h
 CMakeFiles/a3.dir/src/ballsystem.cpp.o: ../src/vertexrecorder.h
+CMakeFiles/a3.dir/src/ballsystem.cpp.o: ../src/wall.h
 
 CMakeFiles/a3.dir/src/camera.cpp.o: ../vecmath/include/Matrix2f.h
 CMakeFiles/a3.dir/src/camera.cpp.o: ../vecmath/include/Matrix3f.h
@@ -28,6 +31,17 @@ CMakeFiles/a3.dir/src/camera.cpp.o: ../src/camera.cpp
 CMakeFiles/a3.dir/src/camera.cpp.o: ../src/camera.h
 CMakeFiles/a3.dir/src/camera.cpp.o: ../src/gl.h
 
+CMakeFiles/a3.dir/src/hit.cpp.o: ../vecmath/include/Matrix2f.h
+CMakeFiles/a3.dir/src/hit.cpp.o: ../vecmath/include/Matrix3f.h
+CMakeFiles/a3.dir/src/hit.cpp.o: ../vecmath/include/Matrix4f.h
+CMakeFiles/a3.dir/src/hit.cpp.o: ../vecmath/include/Quat4f.h
+CMakeFiles/a3.dir/src/hit.cpp.o: ../vecmath/include/Vector2f.h
+CMakeFiles/a3.dir/src/hit.cpp.o: ../vecmath/include/Vector3f.h
+CMakeFiles/a3.dir/src/hit.cpp.o: ../vecmath/include/Vector4f.h
+CMakeFiles/a3.dir/src/hit.cpp.o: ../vecmath/include/vecmath.h
+CMakeFiles/a3.dir/src/hit.cpp.o: ../src/hit.cpp
+CMakeFiles/a3.dir/src/hit.cpp.o: ../src/hit.h
+
 CMakeFiles/a3.dir/src/main.cpp.o: ../3rd_party/glfw/include/GLFW/glfw3.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Matrix2f.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Matrix3f.h
@@ -40,11 +54,14 @@ CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/vecmath.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/ballsystem.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/camera.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/gl.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/hit.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/particlesystem.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/sphere.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/starter3_util.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/timestepper.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/vertexrecorder.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/wall.h
 
 CMakeFiles/a3.dir/src/particlesystem.cpp.o: ../vecmath/include/Matrix2f.h
 CMakeFiles/a3.dir/src/particlesystem.cpp.o: ../vecmath/include/Matrix3f.h
@@ -58,6 +75,19 @@ CMakeFiles/a3.dir/src/particlesystem.cpp.o: ../src/camera.h
 CMakeFiles/a3.dir/src/particlesystem.cpp.o: ../src/gl.h
 CMakeFiles/a3.dir/src/particlesystem.cpp.o: ../src/particlesystem.cpp
 CMakeFiles/a3.dir/src/particlesystem.cpp.o: ../src/particlesystem.h
+
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../vecmath/include/Matrix2f.h
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../vecmath/include/Matrix3f.h
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../vecmath/include/Matrix4f.h
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../vecmath/include/Quat4f.h
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../vecmath/include/Vector2f.h
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../vecmath/include/Vector3f.h
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../vecmath/include/Vector4f.h
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../vecmath/include/vecmath.h
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../src/hit.h
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../src/sphere.cpp
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../src/sphere.h
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../src/wall.h
 
 CMakeFiles/a3.dir/src/starter3_util.cpp.o: ../3rd_party/glfw/include/GLFW/glfw3.h
 CMakeFiles/a3.dir/src/starter3_util.cpp.o: ../src/gl.h
@@ -87,4 +117,15 @@ CMakeFiles/a3.dir/src/vertexrecorder.cpp.o: ../vecmath/include/vecmath.h
 CMakeFiles/a3.dir/src/vertexrecorder.cpp.o: ../src/gl.h
 CMakeFiles/a3.dir/src/vertexrecorder.cpp.o: ../src/vertexrecorder.cpp
 CMakeFiles/a3.dir/src/vertexrecorder.cpp.o: ../src/vertexrecorder.h
+
+CMakeFiles/a3.dir/src/wall.cpp.o: ../vecmath/include/Matrix2f.h
+CMakeFiles/a3.dir/src/wall.cpp.o: ../vecmath/include/Matrix3f.h
+CMakeFiles/a3.dir/src/wall.cpp.o: ../vecmath/include/Matrix4f.h
+CMakeFiles/a3.dir/src/wall.cpp.o: ../vecmath/include/Quat4f.h
+CMakeFiles/a3.dir/src/wall.cpp.o: ../vecmath/include/Vector2f.h
+CMakeFiles/a3.dir/src/wall.cpp.o: ../vecmath/include/Vector3f.h
+CMakeFiles/a3.dir/src/wall.cpp.o: ../vecmath/include/Vector4f.h
+CMakeFiles/a3.dir/src/wall.cpp.o: ../vecmath/include/vecmath.h
+CMakeFiles/a3.dir/src/wall.cpp.o: ../src/wall.cpp
+CMakeFiles/a3.dir/src/wall.cpp.o: ../src/wall.h
 

@@ -148,6 +148,45 @@ CMakeFiles/a3.dir/src/ballsystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/ballsystem.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/ballsystem.cpp -o CMakeFiles/a3.dir/src/ballsystem.cpp.s
 
+CMakeFiles/a3.dir/src/hit.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/src/hit.cpp.o: ../src/hit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/a3.dir/src/hit.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/hit.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/hit.cpp
+
+CMakeFiles/a3.dir/src/hit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/hit.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/hit.cpp > CMakeFiles/a3.dir/src/hit.cpp.i
+
+CMakeFiles/a3.dir/src/hit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/hit.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/hit.cpp -o CMakeFiles/a3.dir/src/hit.cpp.s
+
+CMakeFiles/a3.dir/src/wall.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/src/wall.cpp.o: ../src/wall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/a3.dir/src/wall.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/wall.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/wall.cpp
+
+CMakeFiles/a3.dir/src/wall.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/wall.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/wall.cpp > CMakeFiles/a3.dir/src/wall.cpp.i
+
+CMakeFiles/a3.dir/src/wall.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/wall.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/wall.cpp -o CMakeFiles/a3.dir/src/wall.cpp.s
+
+CMakeFiles/a3.dir/src/sphere.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/src/sphere.cpp.o: ../src/sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/a3.dir/src/sphere.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/sphere.cpp.o -c /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/sphere.cpp
+
+CMakeFiles/a3.dir/src/sphere.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/sphere.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/sphere.cpp > CMakeFiles/a3.dir/src/sphere.cpp.i
+
+CMakeFiles/a3.dir/src/sphere.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/sphere.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/src/sphere.cpp -o CMakeFiles/a3.dir/src/sphere.cpp.s
+
 # Object files for target a3
 a3_OBJECTS = \
 "CMakeFiles/a3.dir/src/main.cpp.o" \
@@ -156,7 +195,10 @@ a3_OBJECTS = \
 "CMakeFiles/a3.dir/src/vertexrecorder.cpp.o" \
 "CMakeFiles/a3.dir/src/timestepper.cpp.o" \
 "CMakeFiles/a3.dir/src/particlesystem.cpp.o" \
-"CMakeFiles/a3.dir/src/ballsystem.cpp.o"
+"CMakeFiles/a3.dir/src/ballsystem.cpp.o" \
+"CMakeFiles/a3.dir/src/hit.cpp.o" \
+"CMakeFiles/a3.dir/src/wall.cpp.o" \
+"CMakeFiles/a3.dir/src/sphere.cpp.o"
 
 # External object files for target a3
 a3_EXTERNAL_OBJECTS =
@@ -168,11 +210,14 @@ a3: CMakeFiles/a3.dir/src/vertexrecorder.cpp.o
 a3: CMakeFiles/a3.dir/src/timestepper.cpp.o
 a3: CMakeFiles/a3.dir/src/particlesystem.cpp.o
 a3: CMakeFiles/a3.dir/src/ballsystem.cpp.o
+a3: CMakeFiles/a3.dir/src/hit.cpp.o
+a3: CMakeFiles/a3.dir/src/wall.cpp.o
+a3: CMakeFiles/a3.dir/src/sphere.cpp.o
 a3: CMakeFiles/a3.dir/build.make
 a3: 3rd_party/glfw/src/libglfw3.a
 a3: vecmath/libvecmath.a
 a3: CMakeFiles/a3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable a3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable a3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/a3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
