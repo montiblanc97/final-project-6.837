@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/3rd_party/glfw
+# Install script for directory: /Users/xinwen/Desktop/6.837-fall18/final-project-6.837/3rd_party/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/3rd_party/glfw/src/cmake_install.cmake")
+  include("/Users/xinwen/Desktop/6.837-fall18/final-project-6.837/build/3rd_party/glfw/src/cmake_install.cmake")
 
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/vecmath
+# Install script for directory: /Users/xinwen/Desktop/6.837-fall18/final-project-6.837/vecmath
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

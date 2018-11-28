@@ -10,7 +10,7 @@ public:
 
     bool intersectsWall(Wall wall, Hit& hit);
     bool intersectsSphere(Sphere other, Hit& hit);
-
+    bool intersectsSphere(Sphere other);
     void updateCenter(Vector3f center);
 
 private:

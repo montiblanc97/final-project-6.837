@@ -9,8 +9,9 @@ const int NUM_PARTICLES = 4;
 const float mass = 1;
 const float drag_constant = 0.5;
 
-const float sphere_radius = 0.075f;
-
+const float sphere_radius = 0.5f;
+const Vector3f COLLISION_COLOR(0.3f, 0.5f, 0.5f);
+std::vector<bool> collided(NUM_PARTICLES, false);
 
 BallSystem::BallSystem()
 {
@@ -25,7 +26,7 @@ BallSystem::BallSystem()
     // big vector of 2n with position at even indices, velocity at odd
 
     for (int i=0; i<NUM_PARTICLES; i++) {
-        Vector3f position = Vector3f(rand_uniform(-0.5f, 0.5f), rand_uniform(-0.5f, 0.5f), rand_uniform(-0.5f, 0.5f));
+        Vector3f position = Vector3f(rand_uniform(-1.0f, 1.0f), rand_uniform(-1.0f, 1.0f), rand_uniform(-1.0f, 1.0f));
         m_vVecState.push_back(position);  // position
         m_vVecState.emplace_back(rand_uniform(-0.5f, 0.5f), rand_uniform(-0.5f, 0.5f), rand_uniform(-0.5f, 0.5f));  // velocity
 
@@ -44,12 +45,13 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
     }
 
 
-    std::vector<Vector3f> f;
+    // even position - velocity; odd position - acceleration
+    std::vector<Vector3f> f(state.size(), Vector3f(0, 0, 0));
 
-    for (int i=0; i<state.size(); i+=2) {  //position and velocity stored in same
-        Vector3f vel = state[i + 1];
+    for (int i=0; i<_spheres.size(); i+=1) {  //position and velocity stored in same
+        Vector3f vel = state[2*i+1];
 
-        f.push_back(vel);  // derivative of position is velocity
+        f[i*2] += vel; // derivative of position is velocity
 
         Vector3f net_force = Vector3f(0, 0, 0);
         //  - gravity
@@ -58,9 +60,18 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
         //  - viscous drag
         net_force = net_force - drag_constant * vel;
 
-        //TODO: collision detection/resolution
+        // Collision detection -- stop ball movement as collision detected
+        //TODO: collision resolution
+        for (int j=i+1; j<_spheres.size(); j+=1){
+            if (_spheres[i].intersectsSphere(_spheres[j])){
+                // TODO: resolve collision
+                // change color if collided
+                collided[i] = true;
+                collided[j] = true;
+            }
+        }
 
-        f.push_back(net_force/mass);
+        f[i*2+1] = (net_force/mass);
     }
 
     return f;
@@ -72,6 +83,7 @@ void BallSystem::draw(GLProgram& gl)
     std::vector<Vector3f> current = getState();
 
     const Vector3f PENDULUM_COLOR(0.73f, 0.0f, 0.83f);
+    
     gl.updateMaterial(PENDULUM_COLOR);
 
     // TODO 4.2, 4.3
@@ -81,7 +93,12 @@ void BallSystem::draw(GLProgram& gl)
         Vector3f pos = current[i];
 
         gl.updateModelMatrix(Matrix4f::translation(pos));
+        if (collided[int(i/2)]){
+            gl.updateMaterial(COLLISION_COLOR);
+        }
         drawSphere(sphere_radius, 10, 10);
+        gl.updateMaterial(PENDULUM_COLOR);
+        
     }
 
     gl.disableLighting();

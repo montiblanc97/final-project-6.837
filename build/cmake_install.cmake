@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837
+# Install script for directory: /Users/xinwen/Desktop/6.837-fall18/final-project-6.837
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/3rd_party/glfw/cmake_install.cmake")
-  include("/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/vecmath/cmake_install.cmake")
+  include("/Users/xinwen/Desktop/6.837-fall18/final-project-6.837/build/3rd_party/glfw/cmake_install.cmake")
+  include("/Users/xinwen/Desktop/6.837-fall18/final-project-6.837/build/vecmath/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Andrew/Desktop/Andrew/Drive/2018-2019/6.837/final-project-6.837/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/xinwen/Desktop/6.837-fall18/final-project-6.837/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

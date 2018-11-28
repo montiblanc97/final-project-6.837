@@ -61,6 +61,24 @@ bool Sphere::intersectsSphere(Sphere other, Hit& hit) {
     return true;
 }
 
+/**
+ *
+ * @param other sphere to check intersection
+ * @return if intersecting or not
+ */
+bool Sphere::intersectsSphere(Sphere other) {
+    Vector3f to_other = other._center - _center;
+    float dist_to_other = to_other.abs();
+    float radii_dist = _radius + other._radius;
+    
+    // no intersection or point intersection, centers distance farther than radii
+    if (dist_to_other >= radii_dist + 0.001) {
+        return false;
+    }
+    
+    return true;
+}
+
 void Sphere::updateCenter(Vector3f center) {
     _center = center;
 }
