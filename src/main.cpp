@@ -31,7 +31,6 @@ void drawAxis();
 // Some constants
 const Vector3f LIGHT_POS(3.0f, 3.0f, 5.0f);
 const Vector3f LIGHT_COLOR(120.0f, 120.0f, 120.0f);
-const Vector3f FLOOR_COLOR(1.0f, 0.0f, 0.0f);
 
 // time keeping
 // current "tick" (e.g. clock number of processor)
@@ -215,12 +214,6 @@ void drawSystem()
     gl.updateLight(LIGHT_POS, LIGHT_COLOR.xyz()); // once per frame
 
     pendulumSystem->draw(gl);
-
-    // set uniforms for floor
-    gl.updateMaterial(FLOOR_COLOR);
-    gl.updateModelMatrix(Matrix4f::translation(0, -5.0f, 0));
-    // draw floor
-    drawQuad(50.0f);
 }
 
 //-------------------------------------------------------------------

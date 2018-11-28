@@ -31,6 +31,8 @@ public:
 
     std::vector<Wall> _walls;
     std::vector<Sphere> _spheres;  // note indexed for each particle
+
+    std::vector<bool> _collided;
 };
 
 #endif

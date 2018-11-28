@@ -5,34 +5,37 @@
 #include "vertexrecorder.h"
 
 // TODO adjust to number of particles.
-const int NUM_PARTICLES = 4;
+const int NUM_PARTICLES = 5;
 const float mass = 1;
 const float drag_constant = 0.5;
 
-const float sphere_radius = 0.5f;
+const float sphere_radius = 0.3f;
 const Vector3f COLLISION_COLOR(0.3f, 0.5f, 0.5f);
-std::vector<bool> collided(NUM_PARTICLES, false);
+const Vector3f FLOOR_COLOR(1.0f, 1.0f, 1.0f);
+
 
 BallSystem::BallSystem()
 {
     // make walls
-    _walls.emplace_back(Vector3f(-1, -1, -1), Vector3f(-1, -1, 1), Vector3f(1, -1, 1));  // floor
-    _walls.emplace_back(Vector3f(-1, -1, -1), Vector3f(-1, 1, -1), Vector3f(1, 1, -1));  // front
-    _walls.emplace_back(Vector3f(-1, -1, 1), Vector3f(-1, 1, 1), Vector3f(1, 1, 1));  // back
-    _walls.emplace_back(Vector3f(-1, -1, -1), Vector3f(-1, 1, -1), Vector3f(1, 1, 1));  // left
-    _walls.emplace_back(Vector3f(1, -1, -1), Vector3f(1, 1, -1), Vector3f(1, 1, 1));  // right
+    _walls.emplace_back(Vector3f(-1, -3, -1), Vector3f(-1, -3, 1), Vector3f(1, -3, 1));  // floor
+//    _walls.emplace_back(Vector3f(-1, -1, -1), Vector3f(-1, 1, -1), Vector3f(1, 1, -1));  // front
+//    _walls.emplace_back(Vector3f(-1, -1, 1), Vector3f(-1, 1, 1), Vector3f(1, 1, 1));  // back
+//    _walls.emplace_back(Vector3f(-1, -1, -1), Vector3f(-1, 1, -1), Vector3f(1, 1, 1));  // left
+//    _walls.emplace_back(Vector3f(1, -1, -1), Vector3f(1, 1, -1), Vector3f(1, 1, 1));  // right
 
 
     // big vector of 2n with position at even indices, velocity at odd
 
     for (int i=0; i<NUM_PARTICLES; i++) {
-        Vector3f position = Vector3f(rand_uniform(-1.0f, 1.0f), rand_uniform(-1.0f, 1.0f), rand_uniform(-1.0f, 1.0f));
+        Vector3f position = Vector3f((i%3)-1, (i+1) * 3, 0);
         m_vVecState.push_back(position);  // position
-        m_vVecState.emplace_back(rand_uniform(-0.5f, 0.5f), rand_uniform(-0.5f, 0.5f), rand_uniform(-0.5f, 0.5f));  // velocity
+        m_vVecState.emplace_back(0, 0, 0);  // velocity
 
         // add sphere rep for each
         _spheres.emplace_back(position, sphere_radius);
     }
+
+    _collided = std::vector<bool>(NUM_PARTICLES, false);
 }
 
 
@@ -49,6 +52,32 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
     std::vector<Vector3f> f(state.size(), Vector3f(0, 0, 0));
 
     for (int i=0; i<_spheres.size(); i+=1) {  //position and velocity stored in same
+        // Collision detection -- stop ball movement as collision detected
+        //TODO: collision resolution
+        for (int j=i+1; j<_spheres.size(); j+=1){
+            if (_spheres[i].intersectsSphere(_spheres[j])){
+                // TODO: resolve collision
+                // change color if collided
+                _collided[i] = true;
+                _collided[j] = true;
+            }
+        }
+
+        for (int j=0; j<_walls.size(); j+=1) {
+            Hit hit = Hit();
+            if (_spheres[i].intersectsWall(_walls[j], hit)) {
+                _collided[i] = true;
+            }
+        }
+
+        // Stop movement on collision
+        if (_collided[i]) {
+            f[i*2] = Vector3f(0, 1, 0);
+            f[i*2+1] = Vector3f(0, 1, 0);
+            continue;
+        }
+
+
         Vector3f vel = state[2*i+1];
 
         f[i*2] += vel; // derivative of position is velocity
@@ -59,17 +88,6 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
 
         //  - viscous drag
         net_force = net_force - drag_constant * vel;
-
-        // Collision detection -- stop ball movement as collision detected
-        //TODO: collision resolution
-        for (int j=i+1; j<_spheres.size(); j+=1){
-            if (_spheres[i].intersectsSphere(_spheres[j])){
-                // TODO: resolve collision
-                // change color if collided
-                collided[i] = true;
-                collided[j] = true;
-            }
-        }
 
         f[i*2+1] = (net_force/mass);
     }
@@ -93,13 +111,19 @@ void BallSystem::draw(GLProgram& gl)
         Vector3f pos = current[i];
 
         gl.updateModelMatrix(Matrix4f::translation(pos));
-        if (collided[int(i/2)]){
+        if (_collided[int(i/2)]){
             gl.updateMaterial(COLLISION_COLOR);
         }
         drawSphere(sphere_radius, 10, 10);
         gl.updateMaterial(PENDULUM_COLOR);
         
     }
+
+    // set uniforms for floor
+    gl.updateMaterial(FLOOR_COLOR);
+    gl.updateModelMatrix(Matrix4f::translation(0, -3, 0));
+    // draw floor
+    drawQuad(50.0f);
 
     gl.disableLighting();
     gl.updateModelMatrix(Matrix4f::identity()); // update uniforms after mode change

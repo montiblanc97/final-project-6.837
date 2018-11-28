@@ -72,7 +72,7 @@ bool Sphere::intersectsSphere(Sphere other) {
     float radii_dist = _radius + other._radius;
     
     // no intersection or point intersection, centers distance farther than radii
-    if (dist_to_other >= radii_dist + 0.001) {
+    if (dist_to_other >= radii_dist) {
         return false;
     }
     
