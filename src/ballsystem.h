@@ -22,8 +22,7 @@ class BallSystem : public ParticleSystem
 {
 public:
     BallSystem();
-    std::vector<Vector3f> getPos(std::vector<Vector3f> state);
-    std::vector<Vector3f> getVelocity(std::vector<Vector3f> state);
+
     std::vector<Vector3f> evalF(std::vector<Vector3f> state) override;
     void draw(GLProgram&);
 
