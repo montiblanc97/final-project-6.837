@@ -15,7 +15,7 @@ Sphere::Sphere(Vector3f center, float radius) {
  */
 bool Sphere::intersectsWall(Wall wall, Hit& hit) {
     // find closest point on plane to center of sphere, calculate if distance greater than radius
-    Vector3f sphere_to_any_point = _center - Vector3f(wall._xmin, wall._ymin, wall._zmin);
+    Vector3f sphere_to_any_point = _center - Vector3f(wall._xmin, wall._ymin, wall._zmax);
     float dist = Vector3f::dot(sphere_to_any_point, wall._normal);  // dot to normal gives shortest distance
 
     // intersection
