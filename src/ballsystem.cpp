@@ -16,6 +16,7 @@ const float sphere_radius = 0.3f;
 const Vector3f COLLISION_COLOR(0.3f, 0.5f, 0.5f);
 const Vector3f FLOOR_COLOR(1.0f, 1.0f, 1.0f);
 
+long count = 0;
 
 BallSystem::BallSystem()
 {
@@ -42,8 +43,9 @@ BallSystem::BallSystem()
 }
 
 
-std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
+std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f>& state)
 {
+    count += 1;
     // need to first update sphere positions to the particles (not handled during time step)
     for (int i=0; i<_spheres.size(); i+=1) {
         Vector3f current_position = state[i*2];  // get position in combined vector
@@ -73,9 +75,12 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
             if (_spheres[i].intersectsSphere(_spheres[j], hit)) {
                 _collided[i] = true;
                 _collided[j] = true;
-//                std::cout << hit.resolveDist << std::endl;
-                f[i*2] += hit.resolveDirection * fmax(0.1, fmin(hit.resolveDist, 0.01)) * 0.00001;
-//                net_force += hit.resolveDirection * hit.resolveDist * fmin(fmax(4, abs(vel[1])), 5) * 200;
+                if (count%300 == 0) {
+                    std::cout << hit.resolveDist << std::endl;
+                }
+
+                state[i] += hit.resolveDirection * hit.resolveDist * 0.001;
+//                net_force += hit.resolveDirection * hit.resolveDirection * 0.1;
             }
         }
 

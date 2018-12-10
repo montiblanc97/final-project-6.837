@@ -23,7 +23,7 @@ class BallSystem : public ParticleSystem
 public:
     BallSystem();
 
-    std::vector<Vector3f> evalF(std::vector<Vector3f> state) override;
+    std::vector<Vector3f> evalF(std::vector<Vector3f>& state) override;
     void draw(GLProgram&);
 
     // inherits 
