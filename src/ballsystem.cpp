@@ -1,11 +1,13 @@
 #include "ballsystem.h"
 
 #include <cassert>
+
 #include "camera.h"
+#include <iostream>
 #include "vertexrecorder.h"
 
 // TODO adjust to number of particles.
-const int NUM_PARTICLES = 5;
+const int NUM_PARTICLES = 1;
 const float mass = 1;
 const float drag_constant = 0.5;
 
@@ -52,14 +54,25 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
     std::vector<Vector3f> f(state.size(), Vector3f(0, 0, 0));
 
     for (int i=0; i<_spheres.size(); i+=1) {  //position and velocity stored in same
+        // VELOCITY
+        Vector3f vel = state[2*i+1];
+        f[i*2] += vel; // derivative of position is velocity
+
+        // ACCELERATION
+        Vector3f net_force = Vector3f(0, 0, 0);
+        net_force[1] = net_force[1] - 9.8 * mass;  // gravity
+        net_force = net_force - drag_constant * vel;  // drag
+
+        net_force = (net_force/mass);
+
         // Collision detection -- stop ball movement as collision detected
         //TODO: collision resolution
         for (int j=i+1; j<_spheres.size(); j+=1){
-            if (_spheres[i].intersectsSphere(_spheres[j])){
-                // TODO: resolve collision
-                // change color if collided
+            Hit hit = Hit();
+            if (_spheres[i].intersectsSphere(_spheres[j], hit)) {
                 _collided[i] = true;
                 _collided[j] = true;
+                net_force += hit.resolveDirection * hit.resolveDist;
             }
         }
 
@@ -67,29 +80,20 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
             Hit hit = Hit();
             if (_spheres[i].intersectsWall(_walls[j], hit)) {
                 _collided[i] = true;
+//                std::cout << hit.resolveDirection[0] << hit.resolveDirection[1] << hit.resolveDirection[2] << std::endl;
+                std::cout << hit.resolveDist << std::endl;
+                net_force += hit.resolveDirection * hit.resolveDist * 2000;
             }
         }
 
-        // Stop movement on collision
-        if (_collided[i]) {
-            f[i*2] = Vector3f(0, 1, 0);
-            f[i*2+1] = Vector3f(0, 1, 0);
-            continue;
-        }
+//        // Stop movement on collision
+//        if (_collided[i]) {
+//            f[i*2] = Vector3f(0, 1, 0);
+//            f[i*2+1] = Vector3f(0, 1, 0);
+//            continue;
+//        }
 
-
-        Vector3f vel = state[2*i+1];
-
-        f[i*2] += vel; // derivative of position is velocity
-
-        Vector3f net_force = Vector3f(0, 0, 0);
-        //  - gravity
-        net_force[1] = net_force[1] - 9.8 * mass;
-
-        //  - viscous drag
-        net_force = net_force - drag_constant * vel;
-
-        f[i*2+1] = (net_force/mass);
+        f[i*2+1] = net_force;
     }
 
     return f;

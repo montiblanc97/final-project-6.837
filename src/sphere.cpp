@@ -16,13 +16,14 @@ Sphere::Sphere(Vector3f center, float radius) {
 bool Sphere::intersectsWall(Wall wall, Hit& hit) {
     // find closest point on plane to center of sphere, calculate if distance greater than radius
     Vector3f sphere_to_any_point = _center - Vector3f(wall._xmin, wall._ymin, wall._zmin);
-    float dist = Vector3f::dot(sphere_to_any_point, wall._normal);  // dot to normal gives shortest distance
+    float dist = abs(Vector3f::dot(sphere_to_any_point, wall._normal));  // dot to normal gives shortest distance
 
     // intersection
     if (dist <= _radius) {
         // go away from the wall by however much it intersected
-        hit.resolveDirection = wall._normal;
+        hit.resolveDirection = wall._normal.normalized();
         hit.resolveDist = dist;
+        hit.wasHit = true;
         return true;
     }
 
@@ -48,7 +49,7 @@ bool Sphere::intersectsSphere(Sphere other, Hit& hit) {
 
     // resolve intersection info
     // go away from the other sphere
-    hit.resolveDirection = -to_other;
+    hit.resolveDirection = -to_other.normalized();
 
     // https://gamedev.stackexchange.com/questions/75756/sphere-sphere-intersection-and-circle-sphere-intersection
     float h = 1.0f/2 + (_radius * _radius - other._radius * other._radius)/(2 * dist_to_other * dist_to_other);
@@ -58,26 +59,11 @@ bool Sphere::intersectsSphere(Sphere other, Hit& hit) {
     // go away the dist from this sphere's center to that of the circle from intersection
     hit.resolveDist = abs(_radius - intersecting_this_dist);
 
+    hit.wasHit = true;
+
     return true;
 }
 
-/**
- *
- * @param other sphere to check intersection
- * @return if intersecting or not
- */
-bool Sphere::intersectsSphere(Sphere other) {
-    Vector3f to_other = other._center - _center;
-    float dist_to_other = to_other.abs();
-    float radii_dist = _radius + other._radius;
-    
-    // no intersection or point intersection, centers distance farther than radii
-    if (dist_to_other >= radii_dist) {
-        return false;
-    }
-    
-    return true;
-}
 
 void Sphere::updateCenter(Vector3f center) {
     _center = center;

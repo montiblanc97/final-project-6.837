@@ -5,6 +5,7 @@
 
 class Hit {
 public:
+    bool wasHit = false;
     Vector3f resolveDirection = Vector3f(-1, -1, -1);
     float resolveDist = -1;
 };
