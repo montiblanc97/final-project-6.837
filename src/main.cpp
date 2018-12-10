@@ -19,7 +19,7 @@ namespace
 {
 
 // Declarations of functions whose implementations occur later.
-void initSystem();
+void initSystem(float stepsize);
 void stepSystem();
 void drawSystem();
 void freeSystem();
@@ -77,7 +77,7 @@ static void keyCallback(GLFWwindow* window, int key,
     {
         cout << "Resetting simulation\n";
         freeSystem();
-        initSystem();
+        initSystem(h);
         resetTime();
         break;
     }
@@ -171,7 +171,7 @@ void drawAxis()
 
 
 // initialize your particle systems
-void initSystem()
+void initSystem(float stepsize)
 {
     switch (integrator) {
     case 'e': timeStepper = new ForwardEuler(); break;
@@ -180,7 +180,7 @@ void initSystem()
     default: printf("Unrecognized integrator\n"); exit(-1);
     }
 
-    pendulumSystem = new BallSystem();
+    pendulumSystem = new BallSystem(stepsize);
 }
 
 void freeSystem() {
@@ -278,7 +278,7 @@ int main(int argc, char** argv)
     camera.SetDistance(10);
 
     // Setup particle system
-    initSystem();
+    initSystem(h);
 
     // Main Loop
     uint64_t freq = glfwGetTimerFrequency();

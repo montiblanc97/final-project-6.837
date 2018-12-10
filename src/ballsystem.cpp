@@ -8,17 +8,17 @@
 #include "vertexrecorder.h"
 
 // TODO adjust to number of particles.
-const int NUM_PARTICLES = 4;
+const int NUM_PARTICLES = 50;
 const float mass = 1;
-const float drag_constant = 0.5;
+const float drag_constant = 1;
 
 const float sphere_radius = 0.3f;
 const Vector3f COLLISION_COLOR(0.3f, 0.5f, 0.5f);
 const Vector3f FLOOR_COLOR(1.0f, 1.0f, 1.0f);
 
-long count = 0;
+long count = -1;
 
-BallSystem::BallSystem()
+BallSystem::BallSystem(float stepsize)
 {
     // make walls
     _walls.emplace_back(Vector3f(-1, -3, -1), Vector3f(-1, -3, 1), Vector3f(1, -3, 1));  // floor
@@ -31,15 +31,20 @@ BallSystem::BallSystem()
     // big vector of 2n with position at even indices, velocity at odd
 
     for (int i=0; i<NUM_PARTICLES; i++) {
-        Vector3f position = Vector3f((i%3)-1, (i+1) * 3, 0);
+        Vector3f position = Vector3f((i%3)-1, (i+1) * 1, 0);
         m_vVecState.push_back(position);  // position
-        m_vVecState.emplace_back(0, 0, 0);  // velocity
+        m_vVecState.emplace_back(rand_uniform(0, 1), rand_uniform(0, 1), rand_uniform(0, 1));  // velocity
 
         // add sphere rep for each
         _spheres.emplace_back(position, sphere_radius);
     }
 
-    _collided = std::vector<bool>(NUM_PARTICLES, false);
+    _collided = std::vector<int>(NUM_PARTICLES, 0);
+    _stepsize = stepsize;
+
+    for (int i=0; i<NUM_PARTICLES; i++) {
+        _colors.emplace_back(rand_uniform(0, 1), rand_uniform(0, 1), rand_uniform(0, 1));
+    }
 }
 
 
@@ -70,33 +75,48 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f>& state)
 
         // Collision detection -- stop ball movement as collision detected
         //TODO: collision resolution
-        for (int j=i+1; j<_spheres.size(); j+=1){
+        Vector3f collision_force = Vector3f(0, 0, 0);
+        bool collided = false;
+        for (int j=0; j<_spheres.size(); j+=1){
+            if (i == j) {
+                continue;
+            }
             Hit hit = Hit();
             if (_spheres[i].intersectsSphere(_spheres[j], hit)) {
-                _collided[i] = true;
-                _collided[j] = true;
-                if (count%300 == 0) {
-                    std::cout << hit.resolveDist << std::endl;
-                }
+                _collided[i] = 50;
 
-                state[i] += hit.resolveDirection * hit.resolveDist * 0.001;
-//                net_force += hit.resolveDirection * hit.resolveDirection * 0.1;
+                collision_force += hit.resolveDirection * hit.resolveDist * 1/_stepsize;
+
+                if (count%1000 == 0 && j==_spheres.size()-1) {
+//                    std::cout << hit.resolveDist << std::endl;
+//                    std::cout << hit.resolveDirection[0] << " " << hit.resolveDirection[1] << " " << hit.resolveDirection[2] << std::endl;
+//                    std::cout << state[i*2+1][0] << " " << state[i*2+1][1] << " " << state[i*2+1][2] << std::endl;
+//                    std::cout << net_force[0] << " " << net_force[1] << " " << net_force[2] << std::endl;
+//                    std::cout << state[i*2] << std::endl;
+                }
             }
         }
 
         for (int j=0; j<_walls.size(); j+=1) {
             Hit hit = Hit();
             if (_spheres[i].intersectsWall(_walls[j], hit)) {
-                _collided[i] = true;
+                count += 1;
+                _collided[i] += 1;
 //                std::cout << hit.resolveDirection[0] << hit.resolveDirection[1] << hit.resolveDirection[2] << std::endl;
 //                std::cout << Vector3f::dot(_walls[j]._normal, vel) << std::endl;
-                net_force += hit.resolveDirection * hit.resolveDist * fmax(0.5, abs(Vector3f::dot(_walls[j]._normal, vel))) * 1500;
+                collision_force += _walls[j]._normal * fmax(0.5, abs(Vector3f::dot(_walls[j]._normal, vel))) * 1/_stepsize;
 
-                if (abs(Vector3f::dot(_walls[j]._normal, vel)) + abs(Vector3f::dot(_walls[j]._normal, net_force)) < 2.f) {
-                    std::cout << "hit" << std::endl;
-                    net_force = Vector3f(0);
-                    f[i*2] = Vector3f(0);
+                if (_collided[i] >= 100) {
+                    if (vel.absSquared() + collision_force.absSquared() - net_force.absSquared() < 2500) {
+                        collision_force = Vector3f(0);
+                        net_force = Vector3f(0);
+                        f[i*2] = Vector3f(0);
+                    } else {
+                        _collided[i] = 0;
+                    }
                 }
+
+//                std::cout << vel.absSquared() + collision_force.absSquared() - net_force.absSquared() << std::endl;
             }
         }
 
@@ -107,7 +127,7 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f>& state)
 //            continue;
 //        }
 
-        f[i*2+1] = net_force;
+        f[i*2+1] = net_force + collision_force;
     }
 
     return f;
@@ -118,23 +138,19 @@ void BallSystem::draw(GLProgram& gl)
 {
     std::vector<Vector3f> current = getState();
 
-    const Vector3f PENDULUM_COLOR(0.73f, 0.0f, 0.83f);
-    
-    gl.updateMaterial(PENDULUM_COLOR);
-
     // TODO 4.2, 4.3
 
     // example code. Replace with your own drawing  code
     for (int i=0; i<current.size(); i+=2) {
+        gl.updateMaterial(_colors[i/2]);
         Vector3f pos = current[i];
 
         gl.updateModelMatrix(Matrix4f::translation(pos));
-        if (_collided[int(i/2)]){
-            gl.updateMaterial(COLLISION_COLOR);
-        }
+//        if (_collided[int(i/2)] > 0){
+//            gl.updateMaterial(COLLISION_COLOR);
+//            _collided[int(i/2)] -= 1;
+//        }
         drawSphere(sphere_radius, 10, 10);
-        gl.updateMaterial(PENDULUM_COLOR);
-        
     }
 
     // set uniforms for floor

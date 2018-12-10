@@ -21,7 +21,7 @@ public:
 class BallSystem : public ParticleSystem
 {
 public:
-    BallSystem();
+    BallSystem(float stepsize);
 
     std::vector<Vector3f> evalF(std::vector<Vector3f>& state) override;
     void draw(GLProgram&);
@@ -29,10 +29,13 @@ public:
     // inherits 
     // std::vector<Vector3f> m_vVecState;
 
+    float _stepsize;
+
     std::vector<Wall> _walls;
     std::vector<Sphere> _spheres;  // note indexed for each particle
 
-    std::vector<bool> _collided;
+    std::vector<int> _collided;
+    std::vector<Vector3f> _colors;
 };
 
 #endif
