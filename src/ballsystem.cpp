@@ -1,13 +1,14 @@
 #include "ballsystem.h"
 
 #include <cassert>
+#include <cmath>
 
 #include "camera.h"
 #include <iostream>
 #include "vertexrecorder.h"
 
 // TODO adjust to number of particles.
-const int NUM_PARTICLES = 1;
+const int NUM_PARTICLES = 4;
 const float mass = 1;
 const float drag_constant = 0.5;
 
@@ -72,7 +73,9 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
             if (_spheres[i].intersectsSphere(_spheres[j], hit)) {
                 _collided[i] = true;
                 _collided[j] = true;
-                net_force += hit.resolveDirection * hit.resolveDist;
+//                std::cout << hit.resolveDist << std::endl;
+                f[i*2] += hit.resolveDirection * fmax(0.1, fmin(hit.resolveDist, 0.01)) * 0.00001;
+//                net_force += hit.resolveDirection * hit.resolveDist * fmin(fmax(4, abs(vel[1])), 5) * 200;
             }
         }
 
@@ -81,8 +84,14 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f> state)
             if (_spheres[i].intersectsWall(_walls[j], hit)) {
                 _collided[i] = true;
 //                std::cout << hit.resolveDirection[0] << hit.resolveDirection[1] << hit.resolveDirection[2] << std::endl;
-                std::cout << hit.resolveDist << std::endl;
-                net_force += hit.resolveDirection * hit.resolveDist * 2000;
+//                std::cout << Vector3f::dot(_walls[j]._normal, vel) << std::endl;
+                net_force += hit.resolveDirection * hit.resolveDist * fmax(0.5, abs(Vector3f::dot(_walls[j]._normal, vel))) * 1500;
+
+                if (abs(Vector3f::dot(_walls[j]._normal, vel)) + abs(Vector3f::dot(_walls[j]._normal, net_force)) < 2.f) {
+                    std::cout << "hit" << std::endl;
+                    net_force = Vector3f(0);
+                    f[i*2] = Vector3f(0);
+                }
             }
         }
 
