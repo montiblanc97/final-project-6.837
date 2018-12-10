@@ -83,9 +83,7 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f>& state)
             }
             Hit hit = Hit();
             if (_spheres[i].intersectsSphere(_spheres[j], hit)) {
-                _collided[i] = 50;
-
-                collision_force += hit.resolveDirection * hit.resolveDist * 1/_stepsize;
+                collision_force += hit.resolveDirection * hit.resolveDist * 1/_stepsize * 10;
 
                 if (count%1000 == 0 && j==_spheres.size()-1) {
 //                    std::cout << hit.resolveDist << std::endl;
@@ -100,13 +98,14 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f>& state)
         for (int j=0; j<_walls.size(); j+=1) {
             Hit hit = Hit();
             if (_spheres[i].intersectsWall(_walls[j], hit)) {
-                count += 1;
                 _collided[i] += 1;
 //                std::cout << hit.resolveDirection[0] << hit.resolveDirection[1] << hit.resolveDirection[2] << std::endl;
 //                std::cout << Vector3f::dot(_walls[j]._normal, vel) << std::endl;
                 collision_force += _walls[j]._normal * fmax(0.5, abs(Vector3f::dot(_walls[j]._normal, vel))) * 1/_stepsize;
 
-                if (_collided[i] >= 100) {
+//                std::cout << vel.absSquared() + collision_force.absSquared() - net_force.absSquared() << std::endl;
+
+                if (_collided[i] >= 200) {
                     if (vel.absSquared() + collision_force.absSquared() - net_force.absSquared() < 2500) {
                         collision_force = Vector3f(0);
                         net_force = Vector3f(0);
@@ -115,17 +114,8 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f>& state)
                         _collided[i] = 0;
                     }
                 }
-
-//                std::cout << vel.absSquared() + collision_force.absSquared() - net_force.absSquared() << std::endl;
             }
         }
-
-//        // Stop movement on collision
-//        if (_collided[i]) {
-//            f[i*2] = Vector3f(0, 1, 0);
-//            f[i*2+1] = Vector3f(0, 1, 0);
-//            continue;
-//        }
 
         f[i*2+1] = net_force + collision_force;
     }
