@@ -12,26 +12,23 @@ const int NUM_PARTICLES = 50;
 const float mass = 1;
 const float drag_constant = 1;
 
-const float sphere_radius = 0.3f;
-const Vector3f COLLISION_COLOR(0.3f, 0.5f, 0.5f);
+const float sphere_radius = 0.75f;
 const Vector3f FLOOR_COLOR(1.0f, 1.0f, 1.0f);
-
-long count = -1;
 
 BallSystem::BallSystem(float stepsize)
 {
     // make walls
     _walls.emplace_back(Vector3f(-1, -3, -1), Vector3f(-1, -3, 1), Vector3f(1, -3, 1));  // floor
-//    _walls.emplace_back(Vector3f(-1, -1, -1), Vector3f(-1, 1, -1), Vector3f(1, 1, -1));  // front
-//    _walls.emplace_back(Vector3f(-1, -1, 1), Vector3f(-1, 1, 1), Vector3f(1, 1, 1));  // back
-//    _walls.emplace_back(Vector3f(-1, -1, -1), Vector3f(-1, 1, -1), Vector3f(1, 1, 1));  // left
-//    _walls.emplace_back(Vector3f(1, -1, -1), Vector3f(1, 1, -1), Vector3f(1, 1, 1));  // right
+    _walls.emplace_back(Vector3f(1, 1, 3.f), Vector3f(1, -3, 3.f), Vector3f(-1, 1, 5.f));  // front
+    _walls.emplace_back(Vector3f(-1, 3, 0.75f), Vector3f(-1, -3, 0.75f), Vector3f(1, 3, 0.f));  // back
+    _walls.emplace_back(Vector3f(-3, 1, 1), Vector3f(-3, -3, 1), Vector3f(-3, 1, -1));  // left
+    _walls.emplace_back(Vector3f(3, 1, -1), Vector3f(3, -1, -1), Vector3f(3, 1, 1));  // right
 
 
     // big vector of 2n with position at even indices, velocity at odd
 
     for (int i=0; i<NUM_PARTICLES; i++) {
-        Vector3f position = Vector3f((i%3)-1, (i+1) * 1, 0);
+        Vector3f position = Vector3f((i%3)-1, (i+1) * 1, 4);
         m_vVecState.push_back(position);  // position
         m_vVecState.emplace_back(rand_uniform(0, 1), rand_uniform(0, 1), rand_uniform(0, 1));  // velocity
 
@@ -50,7 +47,6 @@ BallSystem::BallSystem(float stepsize)
 
 std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f>& state)
 {
-    count += 1;
     // need to first update sphere positions to the particles (not handled during time step)
     for (int i=0; i<_spheres.size(); i+=1) {
         Vector3f current_position = state[i*2];  // get position in combined vector
@@ -76,7 +72,7 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f>& state)
         // Collision detection -- stop ball movement as collision detected
         //TODO: collision resolution
         Vector3f collision_force = Vector3f(0, 0, 0);
-        bool collided = false;
+
         for (int j=0; j<_spheres.size(); j+=1){
             if (i == j) {
                 continue;
@@ -84,14 +80,6 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f>& state)
             Hit hit = Hit();
             if (_spheres[i].intersectsSphere(_spheres[j], hit)) {
                 collision_force += hit.resolveDirection * hit.resolveDist * 1/_stepsize * 10;
-
-                if (count%1000 == 0 && j==_spheres.size()-1) {
-//                    std::cout << hit.resolveDist << std::endl;
-//                    std::cout << hit.resolveDirection[0] << " " << hit.resolveDirection[1] << " " << hit.resolveDirection[2] << std::endl;
-//                    std::cout << state[i*2+1][0] << " " << state[i*2+1][1] << " " << state[i*2+1][2] << std::endl;
-//                    std::cout << net_force[0] << " " << net_force[1] << " " << net_force[2] << std::endl;
-//                    std::cout << state[i*2] << std::endl;
-                }
             }
         }
 
@@ -99,19 +87,19 @@ std::vector<Vector3f> BallSystem::evalF(std::vector<Vector3f>& state)
             Hit hit = Hit();
             if (_spheres[i].intersectsWall(_walls[j], hit)) {
                 _collided[i] += 1;
-//                std::cout << hit.resolveDirection[0] << hit.resolveDirection[1] << hit.resolveDirection[2] << std::endl;
-//                std::cout << Vector3f::dot(_walls[j]._normal, vel) << std::endl;
-                collision_force += _walls[j]._normal * fmax(0.5, abs(Vector3f::dot(_walls[j]._normal, vel))) * 1/_stepsize;
 
-//                std::cout << vel.absSquared() + collision_force.absSquared() - net_force.absSquared() << std::endl;
+                collision_force += _walls[j]._normal * fmax(0.5, abs(Vector3f::dot(_walls[j]._normal, vel))) * 0.1/_stepsize;
+                if (j==0) {  // floor needs more power to counteract gravity
+                    collision_force += _walls[j]._normal * 30/_stepsize;
 
-                if (_collided[i] >= 200) {
-                    if (vel.absSquared() + collision_force.absSquared() - net_force.absSquared() < 2500) {
-                        collision_force = Vector3f(0);
-                        net_force = Vector3f(0);
-                        f[i*2] = Vector3f(0);
-                    } else {
-                        _collided[i] = 0;
+                    if (_collided[i] >= 50) {
+                        if (vel.absSquared() + collision_force.absSquared() - net_force.absSquared() < 2500) {
+                            collision_force = Vector3f(0);
+                            net_force = Vector3f(0);
+                            f[i*2] = Vector3f(0);
+                        } else {
+                            _collided[i] = 0;
+                        }
                     }
                 }
             }
@@ -136,10 +124,6 @@ void BallSystem::draw(GLProgram& gl)
         Vector3f pos = current[i];
 
         gl.updateModelMatrix(Matrix4f::translation(pos));
-//        if (_collided[int(i/2)] > 0){
-//            gl.updateMaterial(COLLISION_COLOR);
-//            _collided[int(i/2)] -= 1;
-//        }
         drawSphere(sphere_radius, 10, 10);
     }
 
@@ -147,6 +131,9 @@ void BallSystem::draw(GLProgram& gl)
     gl.updateMaterial(FLOOR_COLOR);
     gl.updateModelMatrix(Matrix4f::translation(0, -3, 0));
     // draw floor
+    drawQuad(50.0f);
+
+    gl.updateModelMatrix(Matrix4f::rotateX(1.57) * Matrix4f::translation(0, -15, 0));
     drawQuad(50.0f);
 
     gl.disableLighting();
